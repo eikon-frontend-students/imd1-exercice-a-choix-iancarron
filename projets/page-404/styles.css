@@ -1,0 +1,116 @@
+body {
+  font-family: "Jaro", sans-serif;
+  text-align: center;
+  color: #f3b2e0;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+html {
+  background-color: #0a0721;
+}
+
+h1 {
+  margin-top: -130px;
+  text-align: center;
+  -webkit-text-stroke-width: 8px;
+  -webkit-text-stroke-color: #f3b2e0;
+  color: #0a0721;
+  font-family: Jaro;
+  font-size: 500px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: -100px;
+}
+
+h3 {
+  color: #f3b2e0;
+  text-align: center;
+  font-family: "Pixelify Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 410;
+  line-height: normal;
+}
+
+.erreur {
+  margin-top: -470px;
+}
+
+.message {
+  margin-top: 320px;
+  display: flex;
+  flex-direction: column;
+}
+
+.revanche {
+  display: flex;
+  text-align: right;
+  margin-left: 200px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 15px;
+  margin: 20px auto;
+  width: max-content;
+  margin-top: -80px;
+  position: relative;
+  z-index: 10;
+}
+
+.cell {
+  background: #0a0721;
+  border: 5px solid #f4b2e0;
+  border-radius: 10px;
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.cell.taken {
+  cursor: not-allowed;
+  border: 10px solid #f4b2e0;
+}
+.status {
+  margin-top: 20px;
+  color: #f3b2e0;
+  text-align: center;
+  font-family: "Pixelify Sans";
+  font-size: 34px;
+  font-weight: 410;
+  margin-left: 800px;
+  margin-top: -350px;
+}
+.reset {
+  color: #f3b2e0;
+  text-align: center;
+  font-family: "Pixelify Sans";
+  font-size: 18px;
+  font-weight: 410;
+  margin-top: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #0a0721;
+  border: 3px solid #f3b2e0;
+  border-radius: 40px;
+  margin-top: 320px;
+}
+
+canvas#bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: block;
+  z-index: -10;
+  pointer-events: none;
+}
